@@ -34,19 +34,46 @@ This Ansible playbook demonstrates how to print "Hello, World!" on a remote targ
    ansible-playbook hello_world.yaml
 Ansible will connect to the specified target machine and print "Hello, World!" as output.
 ```
-## Playbook File Structure
-The repository contains the following files:
+---
+- name: Hello, World!
+  hosts: localhost
+  gather_facts: false
 
+  tasks:
+    - name: Print "Hello, World!"
+      debug:
+        msg: "Hello, World!"
 
-Save the `hello_world.yaml` playbook and `README.md` file in the same directory.
+- name: Create README file
+  hosts: localhost
+  gather_facts: false
 
-Make sure to replace `your_target_host` in `hello_world.yaml` with the actual hostname or IP address of the machine you want to run this playbook on.
+  tasks:
+    - name: Generate README.md
+      copy:
+        content: |
+          # Ansible Hello World
 
-In the README.md file, you'll find a markdown table (`| File | Description |`) where you can add more files or describe them accordingly. Customize the table as needed.
+          This repository contains an Ansible playbook that prints "Hello, World!" and generates a README.md file with a Markdown table.
 
-With this setup, you can run the playbook and refer to the README.md file for instructions on how to use it, the file structure, and any additional information.
+          ## Usage
 
+          1. Install Ansible on your system.
+          2. Clone this repository.
+          3. Change to the repository directory.
+          4. Run the following command to execute the playbook:
 
+          ```shell
+          ansible-playbook hello_world.yml
+          ```
+
+          ## Playbook Output
+
+          | Task Name             | Result              |
+          |-----------------------|---------------------|
+          | Print "Hello, World!" | Hello, World!       |
+          | Generate README.md    | README.md generated |
+        dest: README.md
 
 License
 This project is licensed under the MIT License.

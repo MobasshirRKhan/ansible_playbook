@@ -37,10 +37,16 @@ Ansible will connect to the specified target machine and print "Hello, World!" a
 ## Playbook File Structure
 The repository contains the following files:
 
-##H1File	Description
-hello_world.yaml	Ansible playbook to print "Hello, World!" on a remote machine.
-README.md	Overview and instructions for using the playbook.
-```
+
+Save the `hello_world.yaml` playbook and `README.md` file in the same directory.
+
+Make sure to replace `your_target_host` in `hello_world.yaml` with the actual hostname or IP address of the machine you want to run this playbook on.
+
+In the README.md file, you'll find a markdown table (`| File | Description |`) where you can add more files or describe them accordingly. Customize the table as needed.
+
+With this setup, you can run the playbook and refer to the README.md file for instructions on how to use it, the file structure, and any additional information.
+
+
 
 License
 This project is licensed under the MIT License.

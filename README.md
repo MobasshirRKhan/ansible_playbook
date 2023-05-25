@@ -2,7 +2,7 @@ hello_world.yaml:
 
 yaml
 Copy code
----
+```---
 - name: Hello World Playbook
   hosts: your_target_host  # Replace with the hostname or IP address of your target machine
   gather_facts: false
@@ -11,6 +11,7 @@ Copy code
     - name: Print Hello World
       debug:
         msg: "Hello, World!"
+```
 README.md:
 
 markdown

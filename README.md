@@ -69,11 +69,10 @@ Ansible will connect to the specified target machine and print "Hello, World!" a
 
           ## Playbook Output
 
-          | Task Name             | Result              |
-          |-----------------------|---------------------|
-          | Print "Hello, World!" | Hello, World!       |
-          | Generate README.md    | README.md generated |
-        dest: README.md
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
 
 License
 This project is licensed under the MIT License.

@@ -33,6 +33,12 @@ This Ansible playbook demonstrates how to print "Hello, World!" on a remote targ
    ```bash
    ansible-playbook hello_world.yaml
 Ansible will connect to the specified target machine and print "Hello, World!" as output.
+Playbook File Structure
+The repository contains the following files:
+
+File	Description
+hello_world.yaml	Ansible playbook to print "Hello, World!" on a remote machine.
+README.md	Overview and instructions for using the playbook.
 
 License
 This project is licensed under the MIT License.
